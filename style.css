@@ -1,0 +1,536 @@
+:root {
+  --color-celeste: #bad9d9;
+  --color-marron: #736451;
+  --color-marronclaro: #bfb19f;
+  --color-beige: #dbcfb9;
+  --color-verde: #aebab0;
+  --color-verde-oscuro: #8391859a;
+  --color-naranja: #F2C48D;
+  --color-facebook:#3b5998;
+  --color-youtube: #c4302b;
+  --color-whatsapp: #00bb2d;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;    /* alternativa */
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(255, 251, 251, 0.897);
+  display: flex;                            /* para que el footer quede abajo!!*/
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: var(--color-verde);
+  color: aliceblue;
+  padding: 10px 0;
+}
+
+nav {                                                                   /* nav */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;                                 
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+nav .logo {
+  width: 150px;
+}
+
+.menu {
+  list-style: none;
+  text-decoration: none;                                                /* menu */
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 0 15px 0 0px;
+  font-size:larger;
+}
+
+.menu a {
+  text-decoration: none;
+  transition: color 0.5s ease;
+  color: var(--color-marron);
+  font-weight: bolder;
+}
+
+.menu a:hover, .footer .footer-1 .footer-columna a:hover {
+  color: var(--color-naranja);
+}
+
+footer {
+  padding: 1em 0;                                                       /* footer */
+  text-align: center;
+  margin-top: auto;
+}
+
+.footer {
+  background-color: var(--color-verde);
+  /* background-color: #0a141d; */          /* alternativa */
+  width: 100%;
+  color: var(--color-marron);
+}
+
+.footer-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  padding: 0px 0;
+}
+
+.footer .footer-1 .footer-columna figure {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .footer-1 .footer-columna figure img {
+  width: 150px;
+}
+
+.footer .footer-1 .footer-columna h2 {
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  margin-bottom : 10px;
+  font-size: 1.5 rem;
+}
+
+.footer .footer-1 .footer-columna h4 {
+  /* color: var(--color-marron); */
+  color: rgb(34, 34, 34);
+  font-size: 1 rem;
+  font-weight: bold;
+}              
+
+.footer .footer-1 .footer-columna a{
+  text-decoration: none;
+  color: rgb(34, 34, 34);
+  transition: color 0.5s ease;
+  font-weight: bolder 
+}
+
+.turismotermas {
+  font-family: "Montserrat";
+  font-size: xx-large;
+ 
+}
+
+.imgprincipal {
+  margin: 10px 0 20px 0;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: animate__fadeInDown;
+  animation-duration: 3s;
+}
+
+.aerolineas {
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.red-social a {
+  background-color: var(--color-verde-oscuro);
+  border-radius: 4px;
+  display: inline-block;
+  margin: 15px 10px 5px;
+  padding: 5px;
+  color: aliceblue;
+  transition: all 0.5s ease;
+}
+
+.footer-2 {
+  /* width: 100%; */
+  max-width: 1200px;
+  margin: auto;
+}
+
+.copyright {
+  font-size: 1rem;
+  color: black;
+}
+
+#facebook:hover {                                                       /* hovers */
+  background-color:var(--color-facebook) ;
+  color: aliceblue;
+}
+
+#twitter:hover {
+  background-color: rgb(0, 0, 0);
+  color: aliceblue;
+}
+
+#instagram:hover {
+  background-color: rgb(218, 45, 117);
+  color: aliceblue;
+}
+
+#youtube:hover {
+  /* background-color: aliceblue;
+  color: #c4302b; */
+  background-color: var(--color-youtube);
+  color: aliceblue;
+}
+
+
+#whatsapp:hover {
+  background-color: var(--color-whatsapp);
+  color: aliceblue;
+}
+
+                                                                          /* Cards */
+                                                                          /* 1 */
+.body-cards {
+  width: 100%;
+  height: 70vh;
+  /* background-color: var(--color-verde); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat";
+}
+
+.body-cards2 {
+  width: 100%;
+  height: 70vh;
+  background-color: var(--color-verde);
+  /* background-color: var(--color-verde); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat";
+}
+
+.cards {                                     /* contenedor principal */
+  width: 100%;
+  display: flex;
+  max-width: 1100px;
+
+}
+
+.card-1 {
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+  cursor: default;
+  transition: all 0.5s ease;
+}
+
+.card-1:hover {
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+  transform: translateY(-3%);
+  /* transform: scale(110%); */
+}
+
+.cards img {
+  width: 100%;
+  height: 210px;
+}
+
+.cards .texto {
+  padding: 15px;
+  text-align: center;
+}
+
+.cards .texto p {
+  line-height: 1.5;
+  color: #6a6a6a;
+}
+
+.cards .texto h3 {
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.cards .texto a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  color: var(--color-marronclaro);
+  border: 1px var(--color-marronclaro) solid ;
+  border-radius: 4px;
+  transition: all 0.5s ease;
+}
+
+.cards .texto a:hover {
+  color: #fff;
+  background-color: var(--color-marronclaro);
+}
+
+                                                                           /* 2 */
+
+.body {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.card-2 {
+  position:relative;
+  width: 300px;
+  height: 350px;
+}
+
+.card-2 .cara {
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: all 1s ease;
+}
+
+.card-2 .adelante {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 5px 5px 20px #00000041;
+}
+
+.card-2 .adelante img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-2 .adelante h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color:aliceblue;
+  background: #73645144;
+  text-align: center;
+}
+
+.card-2 .atras {
+  transform: perspective(600px) rotateY(-180deg);
+  background: var(--color-marron);
+  padding: 15px;
+  color: var(--color-beige);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 20px #00000041;
+}
+
+.card-2 .atras .enlace a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  color: var(--color-marronclaro);
+  border: 1px var(--color-marronclaro) solid ;
+  border-radius: 4px;
+  transition: all 0.5s ease;
+}
+
+.card-2 .atras .enlace a:hover {
+  color: var(--color-marron);
+  background-color: aliceblue;
+}
+
+.card-2:hover .cara {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.card-2:hover .atras {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+                                                                           /* estilo cr */
+form {
+  margin: 0 auto;
+  background-color: white;
+  font-size: 13px;
+  font-family: "Montserrat";
+  width: 600px;
+  padding: 20px;
+  color: #736451;
+  border-radius: 3px;
+} 
+  
+input, textarea {
+  outline: olive;
+  border: solid 1px #ccc;
+  width: 280px;
+}
+
+.fieldset {
+  color: #736451;
+}
+
+.field {
+  border: solid 1px #ccc;
+  padding: 10px;
+  justify-content: center;
+  width: 180px;
+}
+
+.field:focus {
+  border-color: #DBCF89;
+}
+                                                    
+.boton {
+  text-align: center;
+  color:#736451 ;
+  border: 3px;
+}
+
+.Titform {
+  margin-top: 1rem;
+  text-align: center;
+  justify-content: center;
+  color: black;
+  font-weight: bold;
+}
+
+.textf{
+  text-align: center;
+  justify-content: center;
+}
+                                                                            /* estilo ed */
+
+.main {
+  margin: 4rem 4rem 2rem;
+}
+
+.titulonosotres {
+  margin: 2rem 2rem 2rem;
+  padding: 0rem 4rem;
+  text-justify: center;
+}
+
+.parrafonosotres {
+  margin: 4rem 4rem 4rem 4rem;
+  padding: 2rem 2rem 2rem;
+  background-color:  #bad9d9 ;
+}
+
+.parrafonosotres {
+  text-align: justify;
+}
+
+.imgnos {
+  margin: 0rem 16rem 4rem 24rem;
+  padding: 0rem 2rem 2rem;
+  animation: animate__fadeIn;
+  animation-duration: 5s; 
+}
+
+.dosfotos {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 6rem;
+  animation: animate__fadeIn;
+  animation-duration: 5s;
+}
+
+.premio {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 2rem 2rem 2rem;
+  animation: animate__fadeIn;
+  animation-duration: 5s; 
+}
+                                                                            /* estilo ma */
+.cardM {
+  width: 500px;
+  height: 260px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0px 5px 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+ 
+.cardM:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 20px;
+}
+
+.cardM .img-card {
+  background: url(3.jpg);
+  width: 40%;
+  height: 100%;
+  background-size: cover;
+}
+
+.cardM .img-card1 {
+  background: url(55.png);
+  width: 40%;
+  height: 100%;
+  background-size: cover;
+}
+ .cardM .img-card2 {
+  background: url(Termas-grupo-e.png);
+  width: 40%;
+  height: 100%;
+  background-size: cover;
+ }
+ .cardM .content{
+  width: 60%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 50px 150px 50px;
+  padding: 10px 15px;
+ }
+ .cardM .content .title h3{
+color: black;
+font-size: 18px;
+ }
+ .cardM .content .title span{
+font-size: 10px;
+ }
+ .cardM .content .texto p{
+font-size: 15px;
+ }
+.cardM .content .btn-container button{
+  background: #6a6a6a;
+padding: 5px 10px;
+color: #fff;
+border-radius: 5px
+outline none;
+border: none;
+cursor: pointer;
+}
+
+.Cards{
+  display: flex;
+  justify-content: center;
+}
