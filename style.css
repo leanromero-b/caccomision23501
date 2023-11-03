@@ -652,3 +652,13 @@ form .boton {
   }
   
 }
+
+@media screen and (max-width: 300px) {
+  figure, .imgprincipal, form, .img-card, .img-card1, .img-card2 {
+   visibility: hidden;
+   display: none;
+  }
+
+  
+
+}
