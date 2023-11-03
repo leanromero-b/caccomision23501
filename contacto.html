@@ -4,124 +4,138 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css">
   <link rel="icon" href="tt.ico">
+  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:ital,wght@0,300;1,300&display=swap"
     rel="stylesheet">
-  <title>Turismo Termas</title>
+  <title>Contacto</title>
 </head>
 
-<body>
-  <header>
-    <nav>
-      <div class="logo">
-        <a href="./index.html">
-          <img src="./img/turismotermas.png" alt="Logo" width="120px">
-        </a>
-      </div>
-      <div>
-        <ul class="menu">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./paquetes.html">Paquetes</a></li>
-          <li><a href="./contacto.html">Contacto</a></li>
-          <li><a href="./nosotros.html">Nosotros</a></li>
-          <li><a href="./experiencias.html">Experiencias</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <main >
-    <section>
-      <h1 class="Titform">¿Tenes inquietudes?</h1>
-      <br>
-    <p class="textf">Rellena este formulario con tus datos de contacto y tus preguntas seran resueltas a la brevedad</p>
-  
-    <dl>
-        <form action="cristinadorogov100@gmail.com" method="post" target="_blank">
-           <p>Nombre</p>
-             <input type="text" class="field"><br/>
-           <p>Apellido</p>
-             <input type="text" class="field"><br/>
-           <p>Ciudad</p>
-              <input type="text" class="field"><br/>
-           <p>Teléfono</p>
-              <input type="text" class="field"><br/>
-           <p>Email</p>
-              <input type="email" class="field"><br/>
-              <br/>
-            <p>Escriba su inquietud</p>
-            <p><textarea name="Comentario"  cols="60" rows="10">Escriba su consulta</textarea><br/>
-
-              <p class="boton"><input type="button" class="btn btn green" value="Enviar Datos"></p>
-      
-        </form>
-    </section>
-  </main>
-                                                                    <!-- Footer -->            
-  <footer class="footer">
-    <div class="footer-1">
-      <div class="footer-columna">
-        <h2>Nosotros</h2>
-        <p>
-          <a href="./nosotros.html"><h4 class="contacto-footer">Historia</h4>
-          </p></a>
-          <p>
-            <a href="./nosotros.html"><h4 class="contacto-footer">Mision</h4>
-            </p></a>
-          </p>
-          <p>
-            <a href="./nosotros.html"><h4 class="contacto-footer">Responsabilidad Social</h4>
-            </p></a>
-          </p>
-          <p>
-            <a href="./nosotros.html"><h4 class="contacto-footer">RRHH</h4>
-            </p></a>
-          </p>
-       <!--  <figure>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="logo">
           <a href="./index.html">
-            <img src="./img/turismotermas.jpeg" alt="Logo" width="200px">
+            <img src="./img/turismotermas.png" alt="Logo" width="120px">
           </a>
-        </figure> -->
-      </div>
-      <div class="footer-columna">
-        <h2>Turismo Termas</h2>
-        <p>
-        <h4 class="contacto-footer">Whatsapp: 555-55555</h4>
-        </p>
-        <p>
-        <h4 class="contacto-footer">Telefono: 555-55555</h4>
-        </p>
-        <p>
-        <h4 class="contacto-footer">Direccion: Calle Falsa 123</h4>
-        </p>
-        <p>
-        <h4 class="contacto-footer">E-mail: turismotermas@ttermas.com</h4>
-        </p>
-      </div>
-      <div class="footer-columna">
-        <h2> Siguenos en nuestras redes</h2>
-        <div class="red-social">
-          <a href="https://web.whatsapp.com/" target="_blank" id="whatsapp"><i
-            class="fa-brands fa-whatsapp fa-lg"></i></a>
-          <a href="https://www.facebook.com/" target="_blank" id="facebook"><i
-              class="fa-brands fa-facebook fa-lg"></i></a>
-          <a href="https://instagram.com/" target="_blank" id="instagram"><i
-              class="fa-brands fa-instagram fa-lg"></i></a>
-          <a href="https://twitter.com/" target="_blank" id="twitter"><i class="fa-brands fa-x-twitter fa-lg"></i></a>
-          <a href="https://youtube.com/" target="_blank" id="youtube"><i class="fa-brands fa-youtube fa-lg"></i></a>
+        </div>
+        <div class="turismotermas">Turismo Termas</div>
+        <div>
+          <button class="abrir-menu" id="abrir"><img src="./img/1menu.svg" alt=""></button>
+          <ul class="menu" id="menu">
+            <button class="cerrar-menu" id="cerrar"><img src="./img/1cerrar.svg" alt=""></button>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./paquetes.html">Paquetes</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+            <li><a href="./experiencias.html">Experiencias</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main >
+      <br>
+      <section> 
+        <h1 class="Titform">¿Tenés inquietudes?</h1>
+        <br>
+      <p class="textf">Rellená este formulario con tus datos de contacto y tus preguntas serán resueltas a la brevedad</p>
+  <form action="cristinadorogov100@gmail.com" class="form" name="form" id="form" method="post" target="_blank">
+    <p>Nombre</p>
+    <input class="controls" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre"><br/>
+    <p>Apellido</p>
+    <input class="controls" type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido"><br/>
+    <p>Ciudad</p>
+    <input class="controls" type="text" name="ciudad" id="ciudad" placeholder="Ingrese su ciudad"><br/>
+    <p>Teléfono</p>
+    <input class="controls" type="text" name="telefono" id="telefono" placeholder="Ingrese su teléfono"><br/>
+    <p>Email</p>
+    <input class="controls" type="email" name="email" id="email" placeholder="Ingrese su correo electrónico"><br/>
+  <br/>
+  <p>Escriba su inquietud</p>
+  <textarea type="text" name="inquietud" id="inquietud"></textarea>
+  <br/>
+  <br/>
+  <br/>
+  <button class="boton" type="submit">Enviar</button>
+  <p class="warnings" id="warnings"></p> 
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  </form>
+  <br/>
+  <br/>
+      </section>
+    </main>
+                                                                      <!-- Footer -->            
+    <footer class="footer">
+      <div class="footer-1">
+        <div class="footer-columna">
+          <h2>Nosotros</h2>
+          <p>
+            <a href="./nosotros.html"><h4 class="contacto-footer">Historia</h4>
+            </p></a>
+            <p>
+              <a href="./nosotros.html"><h4 class="contacto-footer">Mision</h4>
+              </p></a>
+            </p>
+            <p>
+              <a href="./nosotros.html"><h4 class="contacto-footer">Responsabilidad Social</h4>
+              </p></a>
+            </p>
+            <p>
+              <a href="./nosotros.html"><h4 class="contacto-footer">RRHH</h4>
+              </p></a>
+            </p>
+        <!--  <figure>
+            <a href="./index.html">
+              <img src="./img/turismotermas.jpeg" alt="Logo" width="200px">
+            </a>
+          </figure> -->
+        </div>
+        <div class="footer-columna">
+          <h2>Turismo Termas</h2>
+          <p>
+          <h4 class="contacto-footer">Whatsapp: 555-55555</h4>
+          </p>
+          <p>
+          <h4 class="contacto-footer">Telefono: 555-55555</h4>
+          </p>
+          <p>
+          <h4 class="contacto-footer">Direccion: Calle Falsa 123</h4>
+          </p>
+          <p>
+          <h4 class="contacto-footer">E-mail: turismotermas@ttermas.com</h4>
+          </p>
+        </div>
+        <div class="footer-columna">
+          <h2> Siguenos en nuestras redes</h2>
+          <div class="red-social">
+            <a href="https://web.whatsapp.com/" target="_blank" id="whatsapp"><i
+              class="fa-brands fa-whatsapp fa-lg"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" id="facebook"><i
+                class="fa-brands fa-facebook fa-lg"></i></a>
+            <a href="https://instagram.com/" target="_blank" id="instagram"><i
+                class="fa-brands fa-instagram fa-lg"></i></a>
+            <a href="https://twitter.com/" target="_blank" id="twitter"><i class="fa-brands fa-x-twitter fa-lg"></i></a>
+            <a href="https://youtube.com/" target="_blank" id="youtube"><i class="fa-brands fa-youtube fa-lg"></i></a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="footer-2">
-      <div class="copyright">
-        <h5><b>Turismo Termas</b> - Todos los derechos Reservados ©</h5>
+      <div class="footer-2">
+        <div class="copyright">
+          <h5><b>Turismo Termas</b> - Todos los derechos Reservados ©</h5>
+        </div>
       </div>
-    </div>
-  </footer>
-</body>
-<script src="https://kit.fontawesome.com/c5e0aaebd8.js" crossorigin="anonymous"></script>
-
+    </footer>
+    <script src="archivo.js"></script>
+    <script src="https://kit.fontawesome.com/c5e0aaebd8.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>

@@ -18,14 +18,17 @@
 
 <body>
   <header>
-    <nav>
+    <nav class="nav">
       <div class="logo">
         <a href="./index.html">
           <img src="./img/turismotermas.png" alt="Logo" width="120px">
         </a>
       </div>
+      <div class="turismotermas">Turismo Termas</div>
       <div>
-        <ul class="menu">
+        <button class="abrir-menu" id="abrir"><img src="./img/1menu.svg" alt=""></button>
+        <ul class="menu" id="menu">
+          <button class="cerrar-menu" id="cerrar"><img src="./img/1cerrar.svg" alt=""></button>
           <li><a href="./index.html">Home</a></li>
           <li><a href="./paquetes.html">Paquetes</a></li>
           <li><a href="./contacto.html">Contacto</a></li>
@@ -40,16 +43,22 @@
       
       <div>
        <h1 class="titulonosotres">¿Quiénes somos?</h1>
-       <p class="parrafonosotres"> En Turismo Termas sabemos lo que realmente nos moviliza a la hora de viajar y disfrutar de nuestras vacaciones para que sean una experiencia única de relax y confort y nos aseguramos de que cada uno de los productos que ofrecemos sea una garantía de satisfacción para nuestro/as clientes/as. </p>
-       <img src="img/qienessomos.png" width="50%"  class="imgnos" >
+      </div> 
+      <div>
+        <p class="parrafonosotres"> En Turismo Termas sabemos lo que realmente nos moviliza a la hora de viajar y disfrutar de nuestras vacaciones para que sean una experiencia única de relax y confort y nos aseguramos de que cada uno de los productos que ofrecemos sea una garantía de satisfacción para nuestro/as clientes/as. </p>
+      </div>
+      <div class="imgnos">
+       <img src="img/qienessomos.png" width="50%"  >
      </div> 
        
 
 
        <div >
-           <a name="historia"></a>
-           <h2 class="titulonosotres" >Hitoria</h2>
-           <p class="parrafonosotres">Somos una empresa familiar con más de 30 años en el mercado heredada de nuestros/as padres y madres que con un mucho esfuerzo y valor han forjado con responsabilidad y amor. Aharo hemos tomado la posta para seguir brindando un servicio de excelencia.  </p>
+        <div>
+          <a name="historia"></a>
+          <h2 class="titulonosotres" >Hitoria</h2>
+          <p class="parrafonosotres">Somos una empresa familiar con más de 30 años en el mercado heredada de nuestros/as padres y madres que con un mucho esfuerzo y valor han forjado con responsabilidad y amor. Aharo hemos tomado la posta para seguir brindando un servicio de excelencia.  </p>
+        </div>
            <div class="dosfotos wow animate__animated animate__fadeIn">
              <img src="img/madresypadres.jpg" width="50%" alt="imagen de nos" >
              <img src="img/nos.pgn.png" width="50%" alt="">
@@ -60,17 +69,20 @@
        <div>
            <h2 class="titulonosotres">Valores</h2>
            <p class="parrafonosotres">Trabajo en equipo, honestidad, flexibilidad y pasión por la excelencia</p>
-           <img src="img/trabajo en equipo.png" width="50%" alt="" class="imgnos wow animate__animated animate__fadeIn" >
-           
-       </div>
+      </div>
+      <div class="imgnos">
+        <img src="img/trabajo en equipo.png" width="50%" alt="" class="imgnos wow animate__animated animate__fadeIn" >
+      </div>
 
        <div class=>
            <a name="mision"></a>
            <h2 class="titulonosotres">Misión</h2>
            <p class="parrafonosotres"> Brindar experiencias gratificantes e inolvidables que produzcan un cambio en la manera de viajar y disfrutar</p>
-           <img src="img/mision1.jpg" width="50%" alt="" class="imgnos wow animate__animated animate__fadeIn" >
-           
+      </div>
+       <div class="imgnos">
+        <img src="img/mision1.jpg" width="50%" alt="" class="imgnos wow animate__animated animate__fadeIn" >
        </div>
+           
 
        <div class="item5">
            <h2 class="titulonosotres">Reconocimentos</h2>
@@ -97,15 +109,19 @@
            <a name="responsabilidad"></a>
            <h2 class="titulonosotres">Responsabilidad Social</h2>
            <p class="parrafonosotres"> Para nuestra compania es un principio fundamental priorisar el beneficio socio-ambiental de nuestro emprendimiento, por esto nuestro proyecto esta enmarcado dentro del Ecoturismo con perspectiva de genero, fomentando la igualdad, incluyendo a las minorias y la sustentabilidad. entendiendo que las mujeres aportan mucho más en el sistema económico y social del que se les reconoce. Ser mujer implica enfrentarse a diversas formas de violencia en el ámbito privado y público. Por ello, es un desafío para el sector turístico crear espacios donde se garanticen los derechos y la igualdad de género y usando el Ecoturismo para prteger la biodiversidad y beneficiando a las comunidades de pueblos originarios .</p>
-           <img src="img/cuidarnat.png" alt="" width="50%" class="imgnos wow animate__animated animate__fadeIn" >           
-       </div>
+      </div>
+      <div class="imgnos">
+        <img src="img/cuidarnat.png" alt="" width="50%">           
+      </div>        
        <div>
          <a name="rrhh"></a>
          <h2 class=titulonosotres>RR HH</h2>
          <h3 class="titulonosotres">Nos encontraras aquí</h3>
          <p class="parrafonosotres">E-mail: turismotermasrrhh@ttermas.com</p>
-         <iframe class="imgnos" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24984.439934838996!2d-61.9147757211775!3d-38.48637299610173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95ed04c5f24b9753%3A0x554fc2b1b5ebdedb!2sCabildo%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1695216125004!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-       </div>   
+        </div>   
+        <div class="imgnos">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24984.439934838996!2d-61.9147757211775!3d-38.48637299610173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95ed04c5f24b9753%3A0x554fc2b1b5ebdedb!2sCabildo%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1695216125004!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
    </section>
   </main>
                                                                     <!-- Footer -->            
@@ -169,9 +185,11 @@
       </div>
     </div>
   </footer>
-</body>
 <script src="https://kit.fontawesome.com/c5e0aaebd8.js" crossorigin="anonymous"></script>
 <script src="assets/js/wow.min.js"></script>
 <script>new WOW().init();</script>
+<script src="./script.js"></script>
+</body>
+
 
 </html>
