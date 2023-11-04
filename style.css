@@ -606,6 +606,12 @@ form .boton {
     border: none;
   }
 
+  .imgprincipal{
+    width: 10%;
+    margin: 10px 0;
+    padding: 0;
+  }
+
   .turismotermas {
     display: none;
   }
