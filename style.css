@@ -134,7 +134,7 @@ footer {
   font-size: xx-large;
 }
 
-.imgprincipal {
+img, .imgprincipal {
   margin: 10px 0 20px 0;
   max-width: 100%;
   display: flex;
@@ -607,9 +607,11 @@ form .boton {
   }
 
   .imgprincipal{
-    width: 10%;
+    visibility: hidden;
+    display: none;
+    /* width: 10%;
     margin: 10px 0;
-    padding: 0;
+    padding: 0; */
   }
 
   .turismotermas {
