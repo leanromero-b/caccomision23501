@@ -1,6 +1,19 @@
-import mysql.connector
-import datetime
+# LIBRERIAS
 
+from flask import Flask, request, jsonify
+from flask_cors import CORS
+import mysql.connector
+import os
+import time, datetime
+
+# FLASK - SERVIDOR
+
+app = Flask(__name__)
+
+CORS(app, resources={r"/*": {"origins": "*"}}) 
+
+
+# CLASES - MODELO DE MENSAJE Y METODOS SQL
 
 class Mensaje:
     def __init__(self, host, user, password, database):
@@ -85,3 +98,43 @@ mensaje = Mensaje("localhost", "root", "", "contactos")
 # print(mensaje.listar_mensajes())
 # mensaje.eliminar_mensaje(4)
 mensaje.responder_mensaje(3,"Ya me enviaste ese mensaje")
+
+
+# RUTAS
+
+@app.route("/mensajes", methods=["GET"])
+def listar_mensajes():
+    respuesta = mensaje.listar_mensajes()
+    return jsonify(respuesta)
+
+
+
+@app.route("/mensajes", methods=["POST"])
+def agregar_mensaje():
+    
+    nombre = request.form['nombre']
+    apellido = request.form['apellido']
+    ciudad = request.form['ciudad']
+    telefono = request.form['telefono']
+    email = request.form['email']
+    descripcion = request.form['descripcion']  
+
+    if mensaje.enviar_mensaje(nombre, apellido, ciudad, telefono, email, descripcion):
+        return jsonify({"mensaje": "Mensaje agregado"}), 201
+    else:
+        return jsonify({"mensaje": "No fue posible registrar el mensaje"}), 400
+  
+
+
+@app.route("/mensajes/<int:id>", methods=["PUT"])
+def responder_mensaje(id):
+    
+    gestion = request.form.get("gestion")
+    
+    if mensaje.responder_mensaje(id, gestion):
+        return jsonify({"mensaje": "Mensaje modificado"}), 200
+    else:
+        return jsonify({"mensaje": "Mensaje no encontrado"}), 403
+
+if __name__ == "__main__":
+    app.run(debug=True)
