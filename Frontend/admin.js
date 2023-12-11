@@ -1,5 +1,7 @@
 document.getElementById('btnTraerMensajes').addEventListener('click', () => {
-    fetch('http://127.0.0.1:5000/mensajes')
+
+    // fetch('http://127.0.0.1:5000/mensajes')   local
+    fetch('https://leanromero82.pythonanywhere.com/mensajes')
       .then(response => response.json())
       .then(datos => {
         console.log("datos", datos)
@@ -37,7 +39,9 @@ document.getElementById('formularioContacto').addEventListener('submit', functio
     const formData = new FormData();
     formData.append('gestion', gestion);
 
-    fetch(`http://127.0.0.1:5000/mensajes/${id}`, {
+    // local
+    // fetch(`http://127.0.0.1:5000/mensajes/${id}`, {                
+    fetch(`https://leanromero82.pythonanywhere.com/mensajes/${id}`, {
       method: 'PUT',
       body: formData
     })

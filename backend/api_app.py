@@ -91,8 +91,14 @@ class Mensaje:
          return self.cursor.fetchone()        
         
         
-        
-mensaje = Mensaje("localhost", "root", "", "contactos")
+#  CONEXION A LA BBDD
+# LOCAL
+# mensaje = Mensaje("localhost", "root", "", "contactos") 
+
+# PYTHONANYWHERE
+mensaje = Mensaje("LeanRomero82.mysql.pythonanywhere-services.com", "LeanRomero82", "basededatos", "LeanRomero82$contactos")
+
+
 # mensaje.enviar_mensaje("Julian", "Alvarez", "Manchester", "7894151324", "araña@hmail.com", "spiderman!" )
 # mensaje.enviar_mensaje("Enzo", "Fernandez", "Londres", "9876543126", "enzo@caboom.com", "goool!" )
 # print(mensaje.listar_mensajes())

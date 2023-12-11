@@ -4,8 +4,9 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     
     const formData = new FormData(document.getElementById('contactForm'));
 
-    
-    fetch('http://127.0.0.1:5000/mensajes', {
+    // local
+    // fetch('http://127.0.0.1:5000/mensajes', {
+    fetch('https://leanromero82.pythonanywhere.com/mensajes', {
     method: 'POST',
     body: formData
     })
